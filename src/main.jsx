@@ -8,6 +8,6 @@ import { router } from './Routes/Route.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <RouterProvider router={router}></RouterProvider>
+   <RouterProvider router={router} HydrateFallback={<p>Loading.....</p>}></RouterProvider>
   </StrictMode>,
 )
